@@ -1,4 +1,10 @@
 {
+  "error": {"message": "Please connect your camera and enable camera permissions" },
+  "capture_button_text": {"message": "Get and publish picture" },
+  "h2_title": {"message": "Create and share image" },
+  "canceled": {"message": "Canceled!" },
+  "cancel": {"message": "cancel" },
+  "uploading": {"message": "uploading" },
   "browser_action": {"message": "Share picture from webcam" },
   "ext_desc": {"message": "Create picture from webcam and share it in one click" },
   "ext_name": {"message": "1click Share Webcam Picture" }

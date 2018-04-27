@@ -1,4 +1,10 @@
 {
+	"error": {"message": "אנא חבר מצלמת רשת והענק לדף השראות צילום" },
+	"capture_button_text": {"message": "צור כעת" },
+	"h2_title": {"message": "צור ושתף תמונה" },
+	"canceled": {"message": "בוטל!" },
+	"cancel": {"message": "בטל" },
+	"uploading": {"message": "מעלה" },
 	"browser_action": {"message": "שתף תמונה ממצלמת הרשת" },
 	"ext_desc": {"message": "צור תמונה ממצלמת הרשת ושתף אותה" },
 	"ext_name": {"message": "שתף תמונה ממצלמת רשת" }
