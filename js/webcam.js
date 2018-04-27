@@ -52,6 +52,7 @@ GumHelper.startVideoStreaming(function callback(err, stream, videoElement, width
             //service:service
             },
         complete: function (a,b,c) {
+            $('#topText').html('');
             if(cancelXhr) {
                 $('#topText').text(chrome.i18n.getMessage("canceled")); return;
             }    
@@ -73,7 +74,11 @@ GumHelper.startVideoStreaming(function callback(err, stream, videoElement, width
 
             }
         })
-        $('#topText').html(chrome.i18n.getMessage("uploading") + '<a href="#" id=a_cancel>' + chrome.i18n.getMessage("cancel") + '</a>').find('#a_cancel').click(function(){
+        $('#topText').html('<div class="dialog"><span class="uploading">' + chrome.i18n.getMessage("uploading") + '</span>' + 
+        '<div class="spinner"><div class="double-bounce1"></div>' +
+        '<div class="double-bounce2"></div></div>' +
+        '<a href="#" id="a_cancel">' + chrome.i18n.getMessage("cancel") + '</a>' +
+            '</div>').find('#a_cancel').click(function(){
             cancelXhr = true;
             hr.abort()
         });
